@@ -1,4 +1,5 @@
 require("babel-runtime/regenerator");
+require("webpack-hot-middleware/client");
 // @ts-ignore
 require("./main.css");
 // @ts-ignore

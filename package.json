@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config=config/webpack.dev.js",
+    "dev": "node src/server/main.js",
+    "start": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.dev.js"
   },
   "keywords": [],
@@ -13,13 +14,16 @@
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
     "css-loader": "^2.1.1",
+    "express": "^4.17.1",
     "extract-loader": "^3.1.0",
     "file-loader": "^4.0.0",
     "html-loader": "^0.5.5",
     "style-loader": "^0.23.1",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.3",
-    "webpack-dev-server": "^3.7.1"
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-dev-server": "^3.7.1",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
