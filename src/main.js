@@ -1,3 +1,4 @@
+require("babel-runtime/regenerator");
 // @ts-ignore
 require("./main.css");
 // @ts-ignore
