@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server/main.js",
+    "dev": "nodemon --watch config --watch src/server src/server/main.js",
     "start": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.dev.js"
   },
@@ -32,6 +32,8 @@
     "babel-plugin-async-to-promises": "^1.0.5",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.1"
   }
 }

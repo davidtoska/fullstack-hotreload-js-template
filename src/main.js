@@ -1,11 +1,10 @@
 require("babel-runtime/regenerator");
-require("webpack-hot-middleware/client");
+require("webpack-hot-middleware/client?reload=true");
 // @ts-ignore
 require("./main.css");
 // @ts-ignore
 require("./index.html");
-console.log("hello world 2asdf ");
-console.log("yalla yalla");
+console.log("yalla yalla asdfasdf");
 
 const a = async () => {
   await console.log("hello from the future");

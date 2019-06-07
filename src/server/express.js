@@ -18,5 +18,5 @@ const staticMiddelware = express.static("dist");
 server.use(staticMiddelware);
 
 server.listen(8080, () => {
-  console.log(`Server listening on port ${8080}`);
+  console.log(`Server listeing on port ${8080}`);
 });
